@@ -1,16 +1,15 @@
 #!/bin/bash
 
 echo -ne "\n"
-read -p "Enter Last Name : " Lname
+read -p "Enter E-MailId : " email
 
-pat2="^[A-Z]{1}[a-z]{2,}$"
+pat3="^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.]+[a-z]{2,4}([.][a-z]{2})*$"
 
-
-if [[ $Lname =~ $pat2 ]]
+if [[ $email =~ $pat3 ]]
 then
-	echo -ne "\n $Lname Is Valid Name \n"
+	echo -ne "\n $email Is Valid E-MailId \n"
 else
-	echo -ne "\n $Lname Is Not Valid Name \n"
+	echo -ne "\n $email Is Not Valid E-MailId \n"
 fi
 
 
