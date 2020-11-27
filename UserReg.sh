@@ -1,15 +1,15 @@
 #!/bin/bash
 
 echo -ne "\n"
-read -p "Enter E-MailId : " email
+read -p "Enter Mobile Number : " mobno
 
-pat3="^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.]+[a-z]{2,4}([.][a-z]{2})*$"
+pat4="^([+][1-9]{1,3}[- ]?)?[1-9]{10}$"
 
-if [[ $email =~ $pat3 ]]
+if [[ $mobno =~ $pat4 ]]
 then
-	echo -ne "\n $email Is Valid E-MailId \n"
+	echo -ne "\n $mobno Is Valid Mobile Number \n"
 else
-	echo -ne "\n $email Is Not Valid E-MailId \n"
+	echo -ne "\n $mobno Is Not Valid Mobile Number \n"
 fi
 
 
