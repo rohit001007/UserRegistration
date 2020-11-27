@@ -3,7 +3,7 @@
 echo -ne "\n"
 read -p "Enter Password : " pass
 
-pat8="^(?=.*[A-Z])[a-z](?=.*[!@#$%^&*])(?=.*\d)\S{8,}$"
+pat8="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)\S{8,}$"
 
 if [[ $pass =~ $pat8 ]]
 then
