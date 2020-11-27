@@ -1,15 +1,15 @@
 #!/bin/bash
 
 echo -ne "\n"
-read -p "Enter Mobile Number : " mobno
+read -p "Enter Password : " pass
 
-pat4="^([+][1-9]{1,3}[- ]?)?[1-9]{10}$"
+pat5="^.{8,}$"
 
-if [[ $mobno =~ $pat4 ]]
+if [[ $pass =~ $pat5 ]]
 then
-	echo -ne "\n $mobno Is Valid Mobile Number \n"
+	echo -ne "\n $pass Has Minimun 8 Character \n"
 else
-	echo -ne "\n $mobno Is Not Valid Mobile Number \n"
+	echo -ne "\n $pass Has Not Minimun 8 Character \n"
 fi
 
 
