@@ -1,16 +1,16 @@
 #!/bin/bash
 
 echo -ne "\n"
-read -p "Enter First Name : " name
+read -p "Enter Last Name : " Lname
 
-pat="^[A-Z]{1}[a-z]{2,}$"
+pat2="^[A-Z]{1}[a-z]{2,}$"
 
 
-if [[ $name =~ $pat ]]
+if [[ $Lname =~ $pat2 ]]
 then
-	echo -ne "\n $name Is Valid Name \n"
+	echo -ne "\n $Lname Is Valid Name \n"
 else
-	echo -ne "\n $name Is Not Valid Name \n"
+	echo -ne "\n $Lname Is Not Valid Name \n"
 fi
 
 
